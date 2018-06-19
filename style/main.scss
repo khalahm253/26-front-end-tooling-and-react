@@ -1,0 +1,10 @@
+$background-color: #000000;
+$font-color: #FFFFFF;
+
+html, body {
+  background: $background-color;
+}
+
+h1, pre {
+  color: $font-color;
+}
