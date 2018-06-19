@@ -1,30 +1,50 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 26: Cowsay
-===
+# 26-Lab
+**Author**: Khalil
+**Version**: 1.0.0 
 
-## Submission Instructions
-  * Follow the instructions in the "Lab Instructions" documentation in the reference folder of the class repository
-  
-## Learning Objectives  
-* Students will be able to configure webpack to compile JS and SASS into a bundle
-* Students will be able to configure babel to transpile JSX and ES6 to ES5 javascript
-* Students will be able to create and render react components to the DOM
-* Students will be able to add event listeners to react components 
-* Students will be able to update react component state
+## Overview
+This application uses React.js to display a cow with a random generated word that can be changed by clicking on a button.
 
-#### Feature Tasks  
-Create the following component
+## Getting Started
+The following devDependencies need to be installed:
+  "babel-core": "^6.26.3",
+  "babel-eslint": "^8.2.3",
+  "babel-loader": "^7.1.4",
+  "babel-preset-env": "^1.7.0",
+  "babel-preset-react": "^6.24.1",
+  "babel-preset-stage-0": "^6.24.1",
+  "css-loader": "^0.28.11",
+  "dotenv": "^5.0.1",
+  "eslint": "^4.19.1",
+  "eslint-config-airbnb-base": "^12.1.0",
+  "eslint-plugin-import": "^2.12.0",
+  "eslint-plugin-jest": "^21.15.1",
+  "eslint-plugin-react": "^7.8.2",
+  "html-webpack-plugin": "^3.2.0",
+  "node-sass": "^4.9.0",
+  "react": "^16.3.2",
+  "react-dom": "^16.3.2",
+  "sass-loader": "^7.0.1",
+  "style-loader": "^0.21.0",
+  "webpack": "^4.8.3",
+  "webpack-cli": "^2.1.3",
+  "webpack-dev-server": "^3.1.4",
+  "webpack-merge": "^4.1.2"
 
-###### App
-* Should contain the entire application's view and state
-* Should have a property on the state called content 
-* Should create a view with the following display
-  * A heading with the title "Generate Cowsay Lorem"
-  * A Button that displays "click me"
-    * `onClick` the button should generate new content on the app state using cowsay and faker
-  * A pre tag that displays the App state (content)
+The following dependencies need to be installed:
+  "cowsay-browser": "^1.1.8",
+  "faker": "^4.1.0"
 
-#### Stretch Goal 
-* add a select menu that enables you to change the type of cowfile currently being used
+A .env file must include:
+  NODE_ENV=dev
 
-#### Documentation  
-Write a description of the project in your README.md
+package.json scripts must include:
+  "watch": "webpack-dev-server --config webpack.dev.js"
+
+To start the server, enter `npm run watch` in your terminal
+
+## Architecture
+This application uses JavaScript and React library and sass library 
+
+## Change Log
+06-18-2018 11:00pm Application full functional 
